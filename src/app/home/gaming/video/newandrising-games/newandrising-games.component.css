@@ -1,0 +1,120 @@
+.newandrising-cards-container {
+	display: flex;
+	align-items: center;
+	overflow: scroll;
+	padding: 8px 4px 8px 4px;
+	height: 380px;
+	width: auto;
+}
+
+.newandrising-cards-container::-webkit-scrollbar {
+	display: none;
+}
+
+.newandrising-cards-container .newandrising-card {
+	margin: 5px;
+	width: 150px;
+	position: relative;
+	min-width: 150px;
+	background-color: white;
+	border-radius: 10px;
+	height: 360px;
+	box-shadow: 0px 1px 1px 0.2px;
+}
+
+.poster-overlay {
+	background: rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+	position: absolute;
+	height: 360px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.newandrising-card:hover .poster-overlay {
+	opacity: 1;
+}
+
+.content-details {
+	position: absolute;
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.content-details .live-count {
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	border-radius: 5px;
+	margin: 5px 0px 0px -5px;
+}
+
+.eyeicon {
+	padding: 0px;
+	margin-top: -1px;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.live-count-text {
+	vertical-align: top;
+	padding: 0px;
+	display: inline-block;
+	font-size: 10px;
+}
+
+.newandrising-cards-container .newandrising-card .poster {
+	width: 150px;
+	height: 250px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.newandrising-cards-container .newandrising-card .details-container {
+	display: block;
+	width: 150x;
+	margin: auto;
+	height: 110px;
+	text-align: center;
+}
+
+.details-container .game-name {
+	padding: 0px 0px 0px 5px;
+	text-align: left;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.details-container .follow-btn {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	font-weight: bold;
+	width: 120px;
+	left: 15px;
+	background-color: rgb(166, 166, 166, 0.2);
+	right: 15px;
+}
+
+.follow-btn .follow-icon {
+	font-size: 20px
+}

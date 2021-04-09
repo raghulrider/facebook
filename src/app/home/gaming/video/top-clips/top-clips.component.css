@@ -1,0 +1,161 @@
+.top-clips {
+	display: flex;
+	align-items: center;
+	overflow: scroll;
+	padding: 8px 4px 8px 4px;
+	height: 300px;
+	width: auto;
+}
+
+.top-clips::-webkit-scrollbar {
+	display: none;
+}
+
+.top-clips .video-container {
+	margin: 5px;
+	width: 350px;
+	position: relative;
+	min-width: 350px;
+	border-radius: 10px;
+	height: 290px;
+}
+
+.video-container:hover .video-overlay {
+	opacity: 1;
+}
+
+.video-container:hover .play-icon {
+	opacity: 1;
+}
+
+.video-container:hover .content-details {
+	opacity: 1;
+}
+
+.video-overlay {
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content-details {
+	position: absolute;
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.content-details .live-count {
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	border-radius: 5px;
+	margin: 5px 0px 0px -5px;
+}
+
+.eyeicon {
+	padding: 0px;
+	margin-top: -1px;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.live-count-text {
+	vertical-align: top;
+	padding: 0px;
+	display: inline-block;
+	font-size: 10px;
+}
+
+.play-icon {
+	position: absolute;
+	top: 72px;
+	left: 150px;
+	color: white;
+	cursor: pointer;
+	height: 18px;
+	opacity: 0;
+	font-size: 48px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.top-clips .video-container .video {
+	width: 350px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.item {
+	display: block;
+	width: 350x;
+	margin: auto;
+	height: 90px;
+}
+
+.item .logo {
+	width: 50px;
+	padding: 3px;
+	height: 50px;
+	border: 3px solid red;
+	cursor: pointer;
+	border-radius: 50%;
+	display: inline-block;
+	left: 5;
+}
+
+.item .text-container {
+	top: -13px;
+	left: 10px;
+	position: relative;
+	width: 70%;
+	height: fit-content;
+	display: inline-block;
+}
+
+.item .name {
+	left: 10px;
+	font-weight: bolder;
+	display: block;
+	white-space: nowrap;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.item .gamename {
+	left: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	cursor: pointer;
+	text-overflow: ellipsis;
+}
+
+.item .name:hover,
+.item .gamename:hover {
+	text-decoration: underline;
+}

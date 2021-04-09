@@ -1,0 +1,175 @@
+.live {
+	display: flex;
+	align-items: center;
+	background-color: grey;
+	overflow-x: scroll;
+	height: 365px;
+}
+
+.live-container {
+	margin: 5px;
+	position: relative;
+	width: 640px;
+	height: 360px;
+	border-radius: 10px;
+}
+
+.live-overlay {
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	height: 360px;
+	width: 640px;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content-details {
+	position: absolute;
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.content-details .live-text {
+	padding: 3px;
+	color: white;
+	height: 18px;
+	background-color: red;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 5px 10px 0px -5px;
+}
+
+.content-details .live-count {
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 20px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	border-radius: 5px;
+	margin: 5px 0px 0px -5px;
+}
+
+.eyeicon {
+	padding: 0px;
+	margin-top: -1px;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.live-count-text {
+	vertical-align: top;
+	padding: 0px;
+	display: inline-block;
+	font-size: 10px;
+}
+
+.play-icon {
+	position: absolute;
+	top: 150px;
+	left: 290px;
+	color: white;
+	cursor: pointer;
+	height: 18px;
+	opacity: 1;
+	font-size: 56px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+	/* margin: 5px 10px 0px -5px; */
+}
+
+.live-item {
+	position: relative;
+	top: 250px;
+	display: block;
+	width: 640px;
+	opacity: 0;
+	margin: auto;
+	height: 90px;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.live-item .live-logo {
+	width: 50px;
+	padding: 3px;
+	height: 50px;
+	border: 3px solid red;
+	cursor: pointer;
+	border-radius: 50%;
+	display: inline-block;
+	left: 5;
+}
+
+.live-item .live-text-container {
+	top: -13px;
+	left: 10px;
+	position: relative;
+	width: 70%;
+	height: fit-content;
+	display: inline-block;
+}
+
+.live-item .live-name {
+	left: 10px;
+	font-weight: bolder;
+	display: block;
+	white-space: nowrap;
+	color: white;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.live-item .live-gamename {
+	left: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+	text-overflow: ellipsis;
+}
+
+.live-item .live-name:hover,
+.live-item .live-gamename:hover {
+	text-decoration: underline;
+}
+
+.live-container:hover .live-item {
+	opacity: 1;
+}
+.live-container:hover .play-icon {
+	opacity: 0;
+}
+
+.live-container:hover .live-overlay {
+	opacity: 1;
+}
+
+.live::-webkit-scrollbar {
+	display: none;
+}
+
+video {
+	border-radius: 10px;
+}

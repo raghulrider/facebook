@@ -1,0 +1,120 @@
+<div class="title-container">
+    <div class="title">Gaming</div>
+    <mat-icon class="settings">settings</mat-icon>
+</div>
+<div class="contents">
+    <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel class="panel">
+            <mat-expansion-panel-header class="header" [class.mat-expansion-panel]="true"
+                [routerLink]="['/pages', 'gaming','video']" routerLinkActive="active">
+                <mat-panel-title>
+                    <mat-icon class="icon">play_circle_filled</mat-icon>
+                    <div class="title">
+                        Video
+                    </div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','following']" routerLinkActive="active">
+                <mat-icon class="icon">library_add</mat-icon>
+                <div class="title">Following</div>
+            </div>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','browse']" routerLinkActive="active">
+                <mat-icon class="icon">travel_explore</mat-icon>
+                <div class="title">Browse</div>
+            </div>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','recentlywatched']" routerLinkActive="active">
+                <mat-icon class="icon">timer</mat-icon>
+                <div class="title">Recently Watched</div>
+            </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel class="panel">
+            <mat-expansion-panel-header class="header" [routerLink]="['/pages', 'gaming','playgames']"
+                routerLinkActive="active">
+                <mat-panel-title>
+                    <mat-icon class="icon">sports_esports</mat-icon>
+                    <div class="title">
+                        Play Games
+                    </div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','webgames']" routerLinkActive="active">
+                <mat-icon class="icon">view_in_ar</mat-icon>
+                <div class="title">Web Games</div>
+            </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel class="panel">
+            <mat-expansion-panel-header class="header" [routerLink]="['/pages', 'gaming','tournaments']"
+                routerLinkActive="active">
+                <mat-panel-title>
+                    <mat-icon class="icon">play_circle_filled</mat-icon>
+                    <div class="title">
+                        Tournaments
+                    </div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','hosted']" routerLinkActive="active">
+                <mat-icon class="icon">gite</mat-icon>
+                <div class="title">Hosted</div>
+            </div>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','registered']" routerLinkActive="active">
+                <mat-icon class="icon">app_registration</mat-icon>
+                <div class="title">Registered</div>
+            </div>
+            <div class="subcard" [routerLink]="['/pages', 'gaming','completed']" routerLinkActive="active">
+                <mat-icon class="icon">beenhere</mat-icon>
+                <div class="title">Completed</div>
+            </div>
+        </mat-expansion-panel>
+        <div class="menucard" [routerLink]="['/pages', 'gaming','notifications']" routerLinkActive="active">
+            <mat-icon class="icon">
+                notifications_active</mat-icon>
+            <div class="title">
+                Notifications
+            </div>
+        </div>
+    </mat-accordion>
+    <div class="vertical-split"></div>
+    <div class="btn-container">
+        <button mat-button class="button">
+            <mat-icon>podcasts</mat-icon>
+            Start Streaming
+        </button>
+        <button mat-button class="button">
+            <mat-icon>emoji_events</mat-icon>
+            Create Tournament Event
+        </button>
+    </div>
+    <div class="vertical-split"></div>
+    <div class="recently-watched">
+        <div class="title">
+            Recently Watched
+        </div>
+        <div class="see-all">
+            See All
+        </div>
+        <div class="item" *ngFor="let watched of recentlyWatched">
+            <img [src]="watched.logo" class="logo" alt="watched.name">
+            <div class="text-container">
+                <div class="name">{{watched.name}}</div>
+                <div class="gamename">{{watched.gamename}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="vertical-split"></div>
+    <div class="suggested">
+        <div class="title">
+            Suggested
+        </div>
+        <div class="see-all">
+            See All
+        </div>
+        <div class="item" *ngFor="let suggestion of suggested">
+            <img [src]="suggestion.logo" class="logo" alt="watched.name">
+            <div class="text-container">
+                <div class="name">{{suggestion.name}}</div>
+                <div class="gamename">{{suggestion.gamename}}</div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

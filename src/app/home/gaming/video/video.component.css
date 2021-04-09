@@ -1,0 +1,203 @@
+.container {
+	overflow: auto;
+	width: auto;
+	height: 100vh;
+	border-radius: 10px;
+}
+
+.live-section {
+	width: auto;
+	height: 360px;
+}
+
+.suggested {
+	display: block;
+	width: auto;
+	margin: 20px 20px 20px 20px;
+	height: 320px;
+}
+
+.suggested .title {
+	padding: 10px 0 0 4px;
+	width: 80%;
+	Text-align: left;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.suggested .see-all {
+	padding: 10px 4px 0 0;
+	Width: 10%;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgb(0, 120, 255);
+	text-align: right;
+}
+
+.suggested .suggested-live-section {
+	width: auto;
+	height: 300px;
+}
+
+.popular {
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	height: 420px;
+}
+
+.popular .title {
+	padding: 10px 0 0 4px;
+	width: 80%;
+	Text-align: left;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.popular .see-all {
+	padding: 10px 4px 0 0;
+	Width: 10%;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgb(0, 120, 255);
+	text-align: right;
+}
+
+.popular-games-section {
+	height: 380px;
+	width: auto;
+}
+
+.suggested-tournament {
+	display: block;
+	width: auto;
+	margin: 20px 20px 20px 20px;
+	height: 330px;
+}
+
+.suggested-tournament .title {
+	padding: 10px 0 0 4px;
+	width: 80%;
+	Text-align: left;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.suggested-tournament .see-all {
+	padding: 10px 4px 0 0;
+	Width: 10%;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgb(0, 120, 255);
+	text-align: right;
+}
+
+.suggested-tournament-section {
+	height: 300px;
+	width: auto;
+}
+
+.topclips {
+	display: block;
+	width: auto;
+	margin: 20px 20px 20px 20px;
+	height: 320px;
+}
+
+.topclips .title {
+	padding: 10px 0 0 4px;
+	width: 80%;
+	Text-align: left;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.topclips .see-all {
+	padding: 10px 4px 0 0;
+	Width: 10%;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgb(0, 120, 255);
+	text-align: right;
+}
+
+.topclips .topclips-section {
+	width: auto;
+	height: 300px;
+}
+
+.newandrising {
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	height: 420px;
+}
+
+.newandrising .title {
+	padding: 10px 0 0 4px;
+	width: 80%;
+	Text-align: left;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.newandrising .see-all {
+	padding: 10px 4px 0 0;
+	Width: 10%;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgb(0, 120, 255);
+	text-align: right;
+}
+
+.newandrising-games-section {
+	height: 380px;
+	width: auto;
+}
+
+.suggested-games {
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	height: 420px;
+}
+
+.suggested-games .title {
+	padding: 10px 0 0 4px;
+	width: 80%;
+	Text-align: left;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.suggested-games .see-all {
+	padding: 10px 4px 0 0;
+	Width: 10%;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	color: rgb(0, 120, 255);
+	text-align: right;
+}
+
+.suggested-games-section {
+	height: 380px;
+	width: auto;
+}

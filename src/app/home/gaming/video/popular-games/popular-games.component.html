@@ -1,0 +1,19 @@
+<div class="popular-cards-container">
+    <div class="popular-card" *ngFor="let game of popular">
+        <div class="poster-overlay"></div>
+        <div class="content-details">
+            <div class="live-count">
+                <mat-icon class="eyeicon">visibility</mat-icon>
+                <div class="live-count-text">{{game.playCount}}</div>
+            </div>
+        </div>
+        <img [src]="game.poster" class="poster" alt="game.name">
+        <div class="details-container">
+            <div class="game-name">{{game.name}}</div>
+            <button mat-button class="follow-btn">
+                <mat-icon class="follow-icon">library_add</mat-icon>
+                Follow
+            </button>
+        </div>
+    </div>
+</div>

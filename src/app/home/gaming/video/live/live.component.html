@@ -1,0 +1,25 @@
+<div class="live">
+    <div class="live-container" (mouseenter)="play($event)" (mouseleave)="pause($event)" *ngFor="let live of lives">
+        <div class="live-overlay"></div>
+        <div class="content-details">
+            <div class="live-text">
+                LIVE
+            </div>
+            <div class="live-count">
+                <mat-icon class="eyeicon">visibility</mat-icon>
+                <div class="live-count-text">{{live.livecount}}</div>
+            </div>
+            <mat-icon class="play-icon">play_circle</mat-icon>
+            <div class="live-item">
+                <img [src]="live.imageurl" class="live-logo" alt="suggestion.name">
+                <div class="live-text-container">
+                    <div class="live-name">{{live.channelname}}</div>
+                    <div class="live-gamename">{{live.gamename}}</div>
+                </div>
+            </div>
+        </div>
+        <video id="videoPlayer" width="640" height="360">
+            <source [src]="live.videourl" type="video/mp4" />
+        </video>
+    </div>
+</div>

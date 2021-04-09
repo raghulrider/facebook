@@ -1,0 +1,35 @@
+<div class="suggested-tournament-cards-container">
+    <div class="tour-card-create">
+        <div class="tournament-overlay"></div>
+        <div class="create">
+            Create a tournament
+        </div>
+        <mat-icon class="game-icon">sports_baseball</mat-icon>
+        <div class="extras">
+            Create brackets, manage participants, and organize your tournament
+        </div>
+        <button mat-button class="create-btn">
+            <mat-icon>emoji_events</mat-icon>
+            Create Tournament Event
+        </button>
+    </div>
+    <div class="tour-card" *ngFor="let tournament of tournaments">
+        <div class="tournament-overlay"></div>
+        <img [src]="tournament.poster" class="poster" alt="tournament.type">
+
+        <div class="tour-details">
+            <div class="time">
+                {{tournament.time}}
+            </div>
+            <div class="tour-type">
+                {{tournament.type}}
+            </div>
+            <div class="registered">
+                {{tournament.registered}} teams registered
+            </div>
+            <button mat-button class="view">
+                View Tournament
+            </button>
+        </div>
+    </div>
+</div>

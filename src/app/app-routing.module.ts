@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './entry/login/login.component';
 import { SignupComponent } from './entry/signup/signup.component';
 import { GamingComponent } from './home/gaming/gaming.component';
+import { TempComponent } from './home/gaming/temp/temp.component';
+import { VideoComponent } from './home/gaming/video/video.component';
 import { GroupsComponent } from './home/groups/groups.component';
 import { HomeComponent } from './home/home/home.component';
 import { MarketplaceComponent } from './home/marketplace/marketplace.component';
@@ -33,6 +35,20 @@ const routes: Routes = [
     {
       path: 'gaming',
       component: GamingComponent,
+      children:[
+        {
+          path:'',
+          component:VideoComponent
+        },
+        {
+          path:'video',
+          component:VideoComponent
+        },
+        {
+          path:":pagename",
+          component:TempComponent
+        }
+      ]
     }
   ]},
   

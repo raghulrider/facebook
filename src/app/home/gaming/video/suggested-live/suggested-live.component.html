@@ -1,0 +1,24 @@
+<div class="suggested-live">
+    <div class="video-container" *ngFor="let suggestion of suggested">
+        <div class="video-overlay"></div>
+        <div class="content-details">
+            <div class="live-text">
+                LIVE
+            </div>
+            <div class="live-count">
+                <mat-icon class="eyeicon">visibility</mat-icon>
+                <div class="live-count-text">{{suggestion.viewCount}}</div>
+            </div>
+            <mat-icon class="play-icon">play_circle</mat-icon>
+        </div>
+        <img [src]="suggestion.thumbnailUrl" class="video" alt="suggestion.name">
+        <div class="item">
+            <img [src]="suggestion.logo" class="logo" alt="suggestion.name">
+            <div class="text-container">
+                <div class="name">{{suggestion.name}}</div>
+                <div class="gamename">{{suggestion.gamename}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>
