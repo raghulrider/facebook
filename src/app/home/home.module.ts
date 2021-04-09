@@ -22,6 +22,7 @@ import { SuggestedTournamentComponent } from './gaming/video/suggested-tournamen
 import { TopClipsComponent } from './gaming/video/top-clips/top-clips.component';
 import { NewandrisingGamesComponent } from './gaming/video/newandrising-games/newandrising-games.component';
 import { SuggestedGamesComponent } from './gaming/video/suggested-games/suggested-games.component'
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { SuggestedGamesComponent } from './gaming/video/suggested-games/suggeste
   imports: [
     CommonModule,
     AppRoutingModule,
+    FormsModule,
     MatTabsModule,
     MatIconModule,
     MatButtonModule,
