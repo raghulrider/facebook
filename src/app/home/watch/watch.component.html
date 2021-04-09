@@ -1,1 +1,135 @@
-<p>watch works!</p>
+<div class="row watchContent">
+    <div class="options">
+        <div class="settings">
+                <div >
+                    <h2>Watch</h2>
+                </div>
+                <div class="iconSettings">
+                    <span class="material-icons Icons">settings</span>
+                </div>
+        </div>
+        <div class="search">
+            <span><mat-icon class="icons">search </mat-icon></span>
+            <input type="text" placeholder="Search Videos"  > 
+        </div>
+        <div class="leftItems">
+            <div class="homeItems">
+                <div *ngFor="let data1 of leftIconData1" class="home">
+                        <span class="material-icons" >{{data1.icon}}</span>
+                        <h3 class="homeh1">
+                            {{data1.data}}
+                        </h3>
+                </div>
+                <div class="line"></div>
+                </div>
+                <div class="settings">
+                    <div class="wishlist">
+                        <p>Your WatchList</p>
+                    </div>
+                    <div class="Manage">
+                        <p>Manage</p>
+                    </div>
+                </div>
+                <div *ngFor="let data1 of leftIconData2" class="home part">
+                    <span ><img class="groupImg" width="35px" height="30px" src={{data1.icon}}></span>
+                    <h3 class="homeh1">
+                        {{data1.data}}
+                    </h3>
+            </div>
+        </div>
+        
+
+
+
+
+
+    </div>
+    <div class="notificationVideos">
+        <div class="contents" *ngFor="let datas of data">
+            <div class="header">
+                <div class="row headerItems">
+                    <div class="col-sm-2 content1">
+                        <img class="picImage" width="50px" height="50px" src={{datas.profilePic}}>
+                    </div>
+                    <div class="col-sm-9 content2 ">
+                            <div class="row">
+                                    <span class="Name">{{datas.Name}}</span>
+                                    <span class="Follow" *ngIf=datas.Follow>Follow</span>
+                                
+                            </div>
+                            <div class="row">
+                                    <span class="Date">{{datas.Date}}</span>
+                                    <span class="material-icons">{{datas.Privacy}}</span>
+                            </div>   
+                    </div>
+                   
+                </div>
+                <div>
+                    <button  mat-button [matMenuTriggerFor]="menu"><mat-icon class="icons"> more_horiz</mat-icon></button>
+                            <mat-menu class="popupMenu " #menu="matMenu" xPosition="before">
+                                <div  class="popupButton">
+                                        <div class="popupButton Datas">
+                                            <button mat-button><mat-icon  class="icons">bookmark</mat-icon> <span>Save Video</span> </button> 
+                                        </div>
+                                        <div class="popupButton Datas">
+                                            <button mat-button><mat-icon class="icons"  >comment</mat-icon> <span>Copy Link</span> </button>
+                                        </div>
+                                        <div class="popupButton Datas">
+                                            <button *ngIf=datas.Follow mat-button><mat-icon  class="icons">library_add</mat-icon> <span>Follow {{datas.Name}}</span> </button>
+                                        </div>
+                                        
+                                        <div class="line"></div>
+                                        <div class="popupButton Datas">
+                                            <button mat-button><mat-icon class="icons" >hide_source</mat-icon> <span>Hide Video</span> </button>
+                                        </div>
+                                       <div class="popupButton Datas"> 
+                                             <button mat-button><mat-icon class="icons" >report</mat-icon> <span>Report Video</span> </button>
+                                       </div>
+                                     
+                                </div>  
+                            </mat-menu>
+                </div>
+            </div> 
+            <div class="caption">
+                <p>{{datas.Caption}}</p>
+            </div>
+            <div class="videos">
+                <video  onmouseover="this.play()" onmouseout="this.pause();"  controls>
+                    <source type="video/mp4" src={{datas.Video}}>
+                </video>
+            </div>
+            <div class="publicSection">
+                    <div class="likes">
+                        <div class="likeSection" *ngIf=like1>
+                            <button (click)="likeButton()" mat-button><mat-icon class="icons">thumb_up_alt </mat-icon><span>Like</span></button>
+                        </div>
+                        <div class="likeSection" *ngIf=like2>
+                            <button (click)="likeButton()" mat-button><mat-icon class="icons liked">thumb_up_alt </mat-icon><span class="liked">Like</span></button>
+                        </div>
+                        <div class="likeSection"> 
+                            <button mat-button><mat-icon class="icons">comment</mat-icon> <span>Comment</span> </button>   
+                        </div>    
+                        <div class="likeSection">
+                            <button mat-button><mat-icon class="icons">share</mat-icon> <span>Share</span> </button>
+                        </div> 
+                    </div>   
+                    <div class="Comments">
+                        <span>😂😍{{datas.Likes}}.</span>
+                        <span>{{datas.Comments}} comments</span>
+                    </div>    
+            </div>
+        </div>   
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
