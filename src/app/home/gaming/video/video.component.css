@@ -47,7 +47,7 @@
 	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-top: 10px;
-	height: 420px;
+	height: 440px;
 }
 
 .popular .title {
@@ -70,7 +70,7 @@
 }
 
 .popular-games-section {
-	height: 380px;
+	height: 400px;
 	width: auto;
 }
 
@@ -142,7 +142,7 @@
 	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-top: 10px;
-	height: 420px;
+	height: 440px;
 }
 
 .newandrising .title {
@@ -165,7 +165,7 @@
 }
 
 .newandrising-games-section {
-	height: 380px;
+	height: 400px;
 	width: auto;
 }
 
@@ -175,7 +175,7 @@
 	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-top: 10px;
-	height: 420px;
+	height: 440px;
 }
 
 .suggested-games .title {
@@ -198,6 +198,6 @@
 }
 
 .suggested-games-section {
-	height: 380px;
+	height: 400px;
 	width: auto;
 }
