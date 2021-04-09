@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./live.component.css']
 })
 export class LiveComponent implements OnInit {
+
+  volume:number=0;
+
   lives: any = [{
     videourl: "https://r2---sn-4pvgq-n8vs.googlevideo.com/videoplayback?expire=1617963531&ei=q9VvYOCzM5id7QTSkI84&ip=2a0b%3A1581%3Aa347%3Af941%3Ae32a%3A27a9%3A1d99%3A1e9d&id=o-ADOU80chdZyK_NdCnf0PbJmcx6zO0tpz-tQ782YhbG1m&itag=22&source=youtube&requiressl=yes&mh=Y1&mm=31%2C29&mn=sn-4pvgq-n8vs%2Csn-n8v7kn7l&ms=au%2Crdu&mv=m&mvi=2&pl=30&pcm2=yes&initcwndbps=237500&vprv=1&mime=video%2Fmp4&ns=KiunJYMv9FmZZegBvJATM_0F&ratebypass=yes&dur=97.198&lmt=1615148976448182&mt=1617941870&fvip=7&fexp=24001373%2C24007246&c=WEB&txp=6211222&n=yCvYyYEBXfcYuKP8&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cpcm2%2Cvprv%2Cmime%2Cns%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAMx77CKkqGN3pmjOgK6rE5ag24wiS0OZuc0cnEweRtAPAiEA1h9ENn224eGFAIgfeBfqqMYkrQp6LJdZV98LQNPAUSE%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgPOG-m4yN4dNaC5mbRnrsXFpS5KhFOFSblC9ss1nnG4ACIQCVV2LrIWhxGGCUhnTuL4zXgjt3nuDiqNYvw64JZ3vu5A%3D%3D&title=Rogue+Company+Best+Funny+Twitch+Streamer+Clips",
     livecount: "20k",
@@ -50,5 +53,12 @@ export class LiveComponent implements OnInit {
   }
   pause = (event: Event) => {
     (<HTMLVideoElement>(<HTMLDivElement>event.target).children[2]).pause();
+  }
+  toggleVolume = ()=>{
+    if(this.volume){
+      this.volume=0;
+    }else{
+      this.volume=1;
+    }
   }
 }

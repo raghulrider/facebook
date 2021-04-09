@@ -9,17 +9,21 @@
                 <mat-icon class="eyeicon">visibility</mat-icon>
                 <div class="live-count-text">{{live.livecount}}</div>
             </div>
-            <mat-icon class="play-icon">play_circle</mat-icon>
-            <div class="live-item">
-                <img [src]="live.imageurl" class="live-logo" alt="suggestion.name">
-                <div class="live-text-container">
-                    <div class="live-name">{{live.channelname}}</div>
-                    <div class="live-gamename">{{live.gamename}}</div>
-                </div>
-            </div>
         </div>
-        <video id="videoPlayer" width="640" height="360">
+        <video id="videoPlayer" width="640" height="360" [volume]="volume">
             <source [src]="live.videourl" type="video/mp4" />
         </video>
+        <div class="live-item">
+            <img [src]="live.imageurl" class="live-logo" alt="suggestion.name">
+            <div class="live-text-container">
+                <div class="live-name">{{live.channelname}}</div>
+                <div class="live-gamename">{{live.gamename}}</div>
+            </div>
+        </div>
+        <mat-icon class="icon play-icon">play_circle</mat-icon>
+        <mat-icon class="icon settings-icon">settings</mat-icon>
+        <mat-icon class="icon clip-icon">movie_creation</mat-icon>
+        <mat-icon *ngIf="volume" class="icon volume-icon" (click)="toggleVolume()">volume_up</mat-icon>
+        <mat-icon *ngIf="!volume" class="icon volume-icon" (click)="toggleVolume()">volume_off</mat-icon>
     </div>
 </div>
