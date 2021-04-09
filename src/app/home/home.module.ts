@@ -10,6 +10,9 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { GamingmenuComponent } from './gaming/gamingmenu/gamingmenu.component';
 import { VideoComponent } from './gaming/video/video.component';
@@ -51,6 +54,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatTabsModule,
     MatIconModule,
+    MatListModule,
+    MatCardModule,
+    MatMenuModule,
     MatButtonModule,
     MatExpansionModule
   ]
