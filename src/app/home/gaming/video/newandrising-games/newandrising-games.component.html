@@ -10,6 +10,11 @@
         <img [src]="game.poster" class="poster" alt="game.name">
         <div class="details-container">
             <div class="game-name">{{game.name}}</div>
+            <div class="avatars">
+                <span class="avatar" *ngFor="let avatar of game.friendsWhoFollow">
+                      <img [src]="avatar" width="25" height="25"/>
+                  </span>
+                  </div>
             <button mat-button class="follow-btn">
                 <mat-icon class="follow-icon">library_add</mat-icon>
                 Follow

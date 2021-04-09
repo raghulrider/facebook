@@ -3,7 +3,7 @@
 	align-items: center;
 	overflow: scroll;
 	padding: 8px 4px 8px 4px;
-	height: 380px;
+	height: 400px;
 	width: auto;
 }
 
@@ -18,15 +18,33 @@
 	min-width: 150px;
 	background-color: white;
 	border-radius: 10px;
-	height: 360px;
-	box-shadow: 0px 1px 1px 0.2px;
+	height: 380px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
+.avatar img {
+	padding:1px;
+	border:2px solid white;
+	border-radius: 50%;
+	position: relative;
+	left: -5px;
+	margin-left: -12px;
+	z-index: 1;
+  }
+  
+  .avatars {
+	  bottom:50px;
+	  cursor: pointer;
+	position: absolute;
+	left:15px;
+	direction: rtl;  
+	text-align: left; 
+	padding-left: 12px; 
+  }
 .poster-overlay {
 	background: rgba(0, 0, 0, 0.08);
 	cursor: pointer;
 	position: absolute;
-	height: 360px;
+	height: 380px;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -92,7 +110,7 @@
 	display: block;
 	width: 150x;
 	margin: auto;
-	height: 110px;
+	height: 130px;
 	text-align: center;
 }
 
