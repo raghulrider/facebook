@@ -1,0 +1,192 @@
+
+.watchContent{
+    width:100%;
+    background-color: #eff2f5;
+}
+.options{  
+    width:25%;
+    margin:0;
+    height: 100vh;
+    background-color:white;
+}
+.col-sm-3{
+    padding-right: 0;
+}
+.settings{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    color:#050505;
+    padding-left: 22px;
+    padding-right: 12px;
+}
+.settings .Manage{
+    color: #5496f6;
+}
+
+.settings h2{
+    display: block;
+    font-weight: bold;
+}
+
+ .Icons{
+    background-color:#e3e6ea;
+    padding: 8px;
+    border-radius: 30px;
+} 
+.search{
+    width:90%;
+    margin: auto;
+    border-radius: 20px;
+    background-color:#e3e6ea;
+}
+
+input{
+    border: none;
+    background-color:#e3e6ea;
+}
+.leftItems{
+    height:90vh ;
+    overflow:auto;
+}
+.homeItems{
+    margin-top: 5px;
+}
+.line{
+    height:2px;
+    width:95%;
+    margin: auto;
+    background-color:#eff2f5;
+}
+.home{
+    display: flex;
+    padding:10px 0px 0px 20px;
+    background-color:white;
+}
+
+.part span{
+    border-radius: 30px;
+}
+.home:hover{
+    background-color:#b9bfc5;
+}
+.home h3{
+    padding-left: 10px;
+}
+.groupImg{
+    border-radius: 50%;
+}
+
+
+.notificationVideos{
+    overflow: auto;
+    width:75%;
+    height:100vh;
+}
+.contents{
+    box-sizing: border-box;
+    padding:5px;
+    background-color:white;
+    width:80%;
+    border-style:1px solid black;
+    margin: auto;
+    margin-bottom:15px;
+    border-radius: 5px;
+    margin-top: 15px
+}
+.header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    padding-left: 10px;
+}
+.headerItems{
+    width:40%;
+}
+.caption{
+    box-sizing: border-box;
+    font-size: 17px;
+    color: #050505;
+    padding: 5px 0px 0px 15px;
+}
+.content1{
+    display: inline-block;
+    height:50px;
+}
+
+.content1 .picImage{
+    border-radius: 50%;
+    height:50px;
+}
+.Name{
+    color:#050505;
+    font-size: 15px;
+}
+.Follow{
+    font-weight: 600;
+    color: #216fdb;
+}
+.Date{
+    color:#65676B;
+}
+.wishlist{
+    font-weight: 500;
+}
+.content2 div{
+    margin: 0px;
+}
+.content2 span{
+    padding-left:10px;
+    font-size: 15px;
+}
+.mat-menu-panel {
+    width:300px;
+}
+.popupMenu{
+    margin-right:20px ;
+}
+
+.popupButton{
+    width:210px;
+}
+.popupButton .icons{
+    padding:0px 34px 0px 0px;
+}
+.popupButton .Datas:hover{
+    background-color: #eff2f5;  ;
+}
+video{
+    width:100%;
+    height:480px;
+    background-color: black;
+}
+.publicSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.likeSection{
+    display: inline-block;
+    padding-left:10px;
+}
+
+.likeSection button{
+    background-color: white;
+    border: none;
+}
+.icons{
+    color:rgba(96,105,115,1)
+}
+.Comments span{
+    position: relative;
+    top:7px;
+    padding: 3px;
+    color:#65676B;
+    font-size: .75rem;
+}
+
+.likeSection .liked{
+    color: #1877F2;
+}

@@ -1,10 +1,14 @@
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 .homeContainer {
     display: flex;
     background-color: #eff2f5;
     height: 100%;
 }
 .leftBar {
-    width: 20%;
+    width: 25%;
 }
 .leftBarItem {
     padding: 5px 0px 5px 0px!important; 
@@ -14,7 +18,7 @@
 }
 .leftBarAlign b {
     position: relative;
-    bottom: 10px;
+    top: 5px;
     left: 10px;
     font-weight: 400;
 }
@@ -22,6 +26,8 @@
 
 .centerContent {
     width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 .bodyContent {
     width: 70%;
@@ -37,11 +43,122 @@
     margin-left: 20px;
     border-radius: 20px;
     margin-top: 20px;
+    background-size: cover;
 }
 .storyCard mat-icon {
     color: blue;
     font-size: 40px;
 }
+.storyName {
+    padding-top: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+.postCard {
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+}
+.postCard mat-card {
+    border-radius: 10px;
+}
+
+.postHead p{
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-radius: 20px;
+    color: #a3a3a4;
+}
+.mat-card-avatar {
+    border: 1px solid #a3a3a4!important;
+}
+.postCard .mat-card-header {
+    border-bottom: 1px solid #f0f2f5;
+}
+.postIcon {
+    color: #a3a3a4;
+    display: flex;
+    width: 100%;
+}
+
+.live, .image, .happy {
+    width: 33%;
+    margin: auto;
+}
+.live mat-icon{
+    color: #f02849;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+.image mat-icon{
+    color: #45bd62;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+.happy mat-icon{
+    color: #f9c64e;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+
+.homePost{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+.homePost mat-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.timing {
+    position: relative;
+    top: -5px;
+}
+.publicIcon {
+    position: relative;
+    top:6px;
+    left: 2px;
+    color: #656770;
+    font-size: 20px;
+}
+.menu {
+  margin-left: 260px;
+}
+.likeComment {
+    display: flex;
+    width: 100%;
+}
+.left{
+    width: 50%;
+}
+.right {
+    text-align: right;
+    width: 50%;
+}
+.cardActions {
+    display: flex;
+    border-top: 1px solid #e6e7e9;
+    color: #656770;
+}
+
+.cardActions div {
+    width: 33%;
+    text-align: center;
+    display: flex;
+    padding: 3px;
+    position: relative;
+    left: 45px;
+}
+.cardActions div p {
+    position: relative;
+    top: 3px;
+}
+
 
 .rightBar {
     width: 30%;
@@ -50,5 +167,9 @@
 
 .rightHead{
     color: grey;
+}
+
+.contactImage {
+    border-radius: 20px;
 }
 

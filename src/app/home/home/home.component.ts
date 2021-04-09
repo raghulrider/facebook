@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
 
   leftBarDatas: any;
   contactDatas: any;
+  storiesData: any;
+  postDatas: any;
   constructor(
     private HS: HomeService
   ) { }
@@ -17,6 +19,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.leftBarDatas = this.HS.leftBarDatas;
     this.contactDatas = this.HS.contactDatas;
+    this.storiesData = this.HS.storiesData;
+    this.postDatas = this.HS.postData;
   }
 
 }

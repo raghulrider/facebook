@@ -12,8 +12,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
-
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     WatchComponent,
@@ -30,7 +30,9 @@ import {MatCardModule} from '@angular/material/card';
     MatTabsModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    MatButtonModule
   ]
 })
 export class HomeModule { }

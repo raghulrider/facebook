@@ -12,29 +12,85 @@
     </div>
     <div class="centerContent">
         <div class="bodyContent">
-            <div class="stories">
+            <div class="stories" >
                 <mat-card class="storyCard">
                     <mat-card-content>
                             <mat-icon>add_circle</mat-icon>
                             <p>Create Story</p>
                     </mat-card-content>
                 </mat-card>
-                <mat-card class="storyCard">
+                <mat-card class="storyCard" *ngFor="let item of storiesData" style="background-image: url({{item.bacimg}})">
                     <mat-card-header>
-                            <img mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba1.jpg">
+                            <img mat-card-avatar src={{item.icon}}>
                     </mat-card-header>
+                    <mat-card-content>
+                        <p class="storyName">{{item.name}}</p>
+                    </mat-card-content>
                 </mat-card>
+            </div>
+            <div class="postCard">
+                <mat-card>
+                    <mat-card-header class="postHead">
+                        <img mat-card-avatar src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.6435-1/p148x148/145630507_2911264832488941_8149604583928497108_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=dbb9e7&_nc_ohc=14aUO8FsbMwAX8C8Klb&_nc_oc=AQlVE6KkA9JPW3F1Xsm6IGCtXceYsJVGZD_JnygPHEwfRE1pgxeCaBp794SrBEQ411Y43ObkbBZ_fZozLIiAs0xn&_nc_ht=scontent.fmaa2-1.fna&tp=6&oh=6f360c13514e43f86f93952796c02910&oe=60931563">
+                        <p>What's on your mind, Hari?</p>
+                    </mat-card-header>
+                    <div class="postIcon">
+                        <p class="live"><mat-icon>video_camera_back</mat-icon>Live Video</p>
+                        <p class="image"><mat-icon>image</mat-icon>Photo/Video</p>
+                        <p class="happy"><mat-icon>emoji_emotions</mat-icon>Feeling/Activity</p>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="homePost">
+                <mat-card *ngFor="let item of postDatas">
+                    <mat-card-header>
+                      <div mat-card-avatar style="background-image: url({{item.icon}});"></div>
+                      <mat-card-title>{{item.name}}</mat-card-title>
+                      <mat-card-subtitle class="timing">{{item.time}}<mat-icon class="publicIcon">public</mat-icon></mat-card-subtitle>
+                        <div class="menu">
+                            <button mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon>more_horiz</mat-icon></button>
+                            <mat-menu #beforeMenu="matMenu" xPosition="before">
+                                <button mat-menu-item>Save Post</button>
+                                <button mat-menu-item>Unfollow {{item.name}}</button>
+                                <button mat-menu-item>Report</button>
+                                <button mat-menu-item>Hide Post</button>
+                            </mat-menu>
+                        </div>
+                      
+                    </mat-card-header>
+                    <p>{{item.caption}}</p>
+                    <img mat-card-image src={{item.postImage}} >
+                    <div class="likeComment">
+                        <p class="left">{{item.likes}}</p>
+                        <p class="right">{{item.comments}}</p>
+                    </div>
+                    <mat-card-actions class="cardActions">
+                        <div>
+                            <mat-icon>thumb_up</mat-icon>&nbsp;
+                            <p>Like</p></div>
+                        <div>
+                            <mat-icon>comment</mat-icon>&nbsp;
+                            <p>Comment</p>
+                        </div>
+                        <div>
+                            <mat-icon>share</mat-icon>&nbsp;
+                            <p>Share</p>
+                        </div>
+                    </mat-card-actions>
+                  </mat-card>
             </div>
         </div>
     </div>
     <div class="rightBar">
         <div class="contacts">
             <mat-selection-list #shoes [multiple]="false" >
-                <h2 class="rightHead">Contact</h2>
+                <h2 class="rightHead">Contacts</h2>
                 <mat-list-option *ngFor="let list of contactDatas" class="leftBarItem">
                     <div class="leftBarAlign">
-                        <img src = {{list.img}} width="34px" height="34px">
-                        <b>{{list.name}}</b>
+                        <div>
+                            <img class="contactImage" src = {{list.img}} width="34px" height="34px">
+                            <b>{{list.name}}</b>
+                        </div>
                     </div>
                 </mat-list-option>
               </mat-selection-list>
